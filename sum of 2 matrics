@@ -1,0 +1,45 @@
+import java.io.*;
+import java.util.*;
+class Matrix
+{
+public static void main(String args[])
+{
+int arr1[][]=new int[3][3];
+int arr2[][]=new int[3][3];
+int sum[][]=new int[3][3];
+int r,c;
+Scanner s=new Scanner(System.in);
+System.out.println("enter the elements of first matrix");
+for(r=0;r<2;r++)
+{
+for(c=0;c<2;c++)
+{
+arr1[r][c]=s.nextInt();
+}
+}
+System.out.println("enter the elements of second matrix");
+for(r=0;r<2;r++)
+{
+for(c=0;c<2;c++)
+{
+arr2[r][c]=s.nextInt();
+}
+}
+System.out.println("sum is:");
+for(r=0;r<2;r++)
+{
+for(c=0;c<2;c++)
+{
+sum[r][c]=arr1[r][c]+arr2[r][c];
+}
+}
+for(r=0;r<2;r++)
+{
+for(c=0;c<2;c++)
+{
+System.out.println(sum[r][c]);
+}
+System.out.println("\n"+" "+"\n");
+}
+}
+}
